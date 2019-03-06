@@ -49,13 +49,13 @@ after running:
 produces:
 
 ```go
-_, _ = sb.WriteString("SELECT `col1`, `col2`, `col3` ")
-_, _ = sb.WriteString("FROM `some_table` t1 ")
-_, _ = sb.WriteString(" INNER JOIN `some_other_table` t2 ")
-_, _ = sb.WriteString(" ON ( ")
-_, _ = sb.WriteString("   t1.`col3` = t2.`col3` ")
-_, _ = sb.WriteString("   AND ")
-_, _ = sb.WriteString("   t1.`col2` IS NOT NULL ")
-_, _ = sb.WriteString("         ) ")
-_, _ = sb.WriteString("ORDER BY t1.`col1` DESC")
+sb.WriteString("SELECT `col1`, `col2`, `col3` ")
+sb.WriteString("FROM `some_table` t1 ")
+sb.WriteString(" INNER JOIN `some_other_table` t2 ")
+sb.WriteString(" ON ( ")
+sb.WriteString("   t1.`col3` = t2.`col3` ")
+sb.WriteString("   AND ")
+sb.WriteString("   t1.`col2` IS NOT NULL ")
+sb.WriteString("         ) ")
+sb.WriteString("ORDER BY t1.`col1` DESC")
 ```
