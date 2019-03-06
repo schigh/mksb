@@ -23,7 +23,7 @@ By default, the reader delimits the file using newline character `\n`, which is 
 
 You can specify the variable name for your `strings.Builder` instance by passing it in the `--sbName` flag
 
-
+> note that currently (as of go 1.12), the `error` returned from any `strings.Builder` `Write...` function is _always_ nil, so we are ignoring them for now
 ----
 
 For sql queries, use an output delimiter of `32` (space).  For example, the following query:
