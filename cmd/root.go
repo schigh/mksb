@@ -1,6 +1,3 @@
-// Copyright © 2019 InVisionApp
-
-
 package cmd
 
 import (
